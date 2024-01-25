@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Notepad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>Online Note</h1>
+    </div>
+
+    <div class="cont">
+        <div class="notes-cont">
+            <h2>Study Notes</h2>
+            <h5>By Naveen</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptates sit accusantium sint
+                cupiditate fugit rerum, sequi nihil magnam unde asperiores ut tempore aut! Et illum est quasi quod
+                saepe?</p>
+            <button onclick="deletenotes(event)">Delete</button>
+        </div>
+    </div>
+
+
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Notes</h2><br>
+        <form>
+            <input type="text" placeholder="Notes Title" id="notes-title-input"><br><br>
+            <input type="text" placeholder="Notes Author" id="notes-author-input"><br><br>
+            <textarea placeholder="Short description" id="notes-description-input"></textarea><br><br>
+            <button id="add-notes">Add</button>
+            <button id="cancel-notes">Cancel</button><br>
+        </form>
+    </div>
+
+    <button class="add-button" id="add-popup-button">+</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
